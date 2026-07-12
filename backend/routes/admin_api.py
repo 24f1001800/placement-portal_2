@@ -2,6 +2,8 @@ from flask import Blueprint, jsonify, request
 from flask_jwt_extended import jwt_required, get_jwt_identity
 from models import db, User, CompanyProfile, PlacementDrive, StudentProfile, Application
 
+# Admin management APIs for approvals, searches, and moderation
+
 admin_bp = Blueprint('admin_bp', __name__)
 
 def is_admin():
