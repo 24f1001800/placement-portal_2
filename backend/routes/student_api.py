@@ -5,6 +5,8 @@ from models import db, User, PlacementDrive, Application, StudentProfile, Compan
 from tasks import export_student_history_to_csv, celery_app
 from flask_caching import Cache
 
+# Student APIs for profiles, applications and placement tracking
+
 student_bp = Blueprint('student_bp', __name__)
 
 cache = Cache(config={'CACHE_TYPE': 'RedisCache', 'CACHE_REDIS_URL': 'redis://localhost:6379/0'})
