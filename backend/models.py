@@ -1,3 +1,5 @@
+# Placement Portal V2 Database Schema
+
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
