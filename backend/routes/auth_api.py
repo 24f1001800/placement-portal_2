@@ -3,6 +3,8 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity
 from models import db, User, CompanyProfile
 
+# JWT authentication and role-based access control routes
+
 auth_bp = Blueprint('auth_bp', __name__)
 
 @auth_bp.route('/login', methods=['POST'])
