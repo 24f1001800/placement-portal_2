@@ -5,6 +5,8 @@ from models import db, User, PlacementDrive, CompanyProfile, Application, Studen
 from datetime import datetime
 from tasks import export_applications_to_csv, celery_app
 
+# Company APIs for drives, applicants, interviews and placements
+
 company_bp = Blueprint('company_bp', __name__)
 
 def get_company():
