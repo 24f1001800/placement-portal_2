@@ -8,6 +8,8 @@ axios.interceptors.request.use(config => {
     return config;
 });
 
+// Placement Portal V2 Vue SPA components and routing
+
 const Home = {
     template: `
         <div class="container text-center mt-5 py-5">
